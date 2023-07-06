@@ -1,11 +1,16 @@
 <script lang="ts">
-	// PROPS
+	import { enhance } from '$app/forms';
 
 	import Button from '../../components/common/button.svelte';
+
+	// PROPS
 
 	// STATE
 
 	// LOGIC
 </script>
 
-<Button>Find recruits</Button>
+<form method="post" action="?/recruit" use:enhance>
+	<!-- TODO make this a submit button when we're ready -->
+	<Button>Find recruits</Button>
+</form>
