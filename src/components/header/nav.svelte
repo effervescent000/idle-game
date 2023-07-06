@@ -10,7 +10,7 @@
 	// LOGIC
 </script>
 
-<div>
+<div class="flex gap-10 text-2xl">
 	{#each ROUTE_TREE as route}
 		<NavLink {...route} />
 	{/each}
