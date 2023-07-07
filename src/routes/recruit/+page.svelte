@@ -3,9 +3,10 @@
 
 	import type { Recruit } from '../../types/heroes';
 
+	import { rosterStore } from '../../stores/roster-stores';
+
 	import Button from '../../components/common/button.svelte';
 	import HeroCard from '../../components/heroes/hero-card.svelte';
-	import { rosterStore } from '../../stores/roster-stores';
 
 	// PROPS
 	export let data: { data: Recruit[] };

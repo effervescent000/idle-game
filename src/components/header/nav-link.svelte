@@ -8,7 +8,7 @@
 	// STATE
 
 	// LOGIC
-	const active = $page.url.pathname === path;
+	$: active = $page.url.pathname === path;
 </script>
 
 <a href={path} class={`border-b border-accent-primary ${!active && 'border-opacity-0'}`}>{label}</a>
