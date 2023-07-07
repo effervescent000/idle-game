@@ -5,6 +5,7 @@
 
 	import Button from '../../components/common/button.svelte';
 	import HeroCard from '../../components/heroes/hero-card.svelte';
+	import { rosterStore } from '../../stores/roster-stores';
 
 	// PROPS
 	export let data: { data: Recruit[] };
@@ -22,6 +23,7 @@
 	{#if data?.data}
 		{#each data.data as recruit}
 			<HeroCard hero={recruit} />
+			<Button callback={() => rosterStore.append({ ...recruit, id: 1 })}>Select</Button>
 		{/each}
 	{/if}
 </div>
