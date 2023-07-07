@@ -10,7 +10,7 @@
 	// LOGIC
 </script>
 
-<form method="post" action="?/recruit" use:enhance>
+<form method="post" action="?/fetch" use:enhance>
 	<!-- TODO make this a submit button when we're ready -->
-	<Button>Find recruits</Button>
+	<Button type="submit">Find recruits</Button>
 </form>
